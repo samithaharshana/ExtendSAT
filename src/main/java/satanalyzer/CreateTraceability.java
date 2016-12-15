@@ -12,7 +12,7 @@ public class CreateTraceability {
 		int count=0;
 		
 		ArrayList<AttributeList> l1= new ArrayList<AttributeList>();
-		ArrayList<AttributeList> l2= new ArrayList<AttributeList>();
+		ArrayList<AttributeList> l2= new ArrayList<AttributeList>();	
 		//System.out.println(list1.get(0).size());
 		for(int i=0;i<list1.size();i++){
 			for(int j=0;j<list2.get(0).size();j++){

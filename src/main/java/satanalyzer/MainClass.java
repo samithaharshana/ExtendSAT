@@ -27,8 +27,21 @@ public class MainClass {
 		CreateRelationFile relation = new CreateRelationFile("Relations.xml");
 		relation.createRelations(mapList);
 		
-		StoreData sd = new StoreData();
-		sd.createDB();
+		/*StoreData hello = new StoreData();
+        hello.createDb();*/
+       // hello.removeData();
+        //hello.shutDown();
+		
+		RelationFileToArray r = new RelationFileToArray();
+		ArrayList<HashMap<String,String>> relationlist = r.toArray("Relations.xml");
+		
+		StoreData st = new StoreData();
+		st.deleteData();
+		st.createdb(list1);
+		st.createdb(list2);
+		st.createRelation(relationlist);
+		
+		
 		
 	}
 }
